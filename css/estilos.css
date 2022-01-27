@@ -8,30 +8,35 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+#header h1,
+#header h2,
+#header h3,
+#header h4,
+#header h5,
+#header h6 {
     text-align: center;
     margin-bottom: 0;
 }
 
 .texto-naranja {
     font-weight: 300;
-    color: orange;
+    color: #da2929;
 }
 
 .texto-blanco {
     margin-top: 5px;
-    margin-bottom: 25px;
-    font-weight: 700;
+    margin-bottom: 0;
+    font-weight: bold;
     color: #fff;
 }
 
@@ -40,11 +45,63 @@ h6 {
 }
 
 /* ------------------------- */
+/* Clases de Fullpage.js */
+/* ------------------------- */
+#fp-nav ul li a span {
+    background: #da2929;
+}
+
+#fp-nav ul li .fp-tooltip {
+    color: #da2929;
+}
+
+/* ------------------------- */
+/* Menu de Navegación */
+/* ------------------------- */
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px 40px;
+}
+
+.nav li,
+.nav a {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    transition: 0.5s ease;
+}
+.nav li.active a {
+    color: #da2929;
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.nav li:hover a {
+    color: #da2929;
+}
+.menu li a {
+    transition: 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------- */
 /* Header */
 /* ------------------------- */
 
 .header {
-    background: url('../media/bg-imagen.jpeg');
+    background: url('../media/dx3.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -56,8 +113,13 @@ h6 {
 }
 
 .header .titulo {
-    font-size: 70px;
+    font-size: 120px;
+    font-weight: bold;
     text-transform: uppercase;
+}
+.header .subtitle {
+    font-size: 24px;
+    font-weight: normal;
 }
 .header .contenedor-icono {
     position: absolute;
@@ -81,25 +143,75 @@ h6 {
 }
 
 .header .btn-cta {
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 8px;
     font-size: 20px;
-    cursor: pointer;
-    background-color: orange;
-    border-width: 0px;
-    color: #fff;
-    padding: 7px;
-    padding-left: 1%;
-    padding-right: 1%;
-    border-radius: 5px;
+    font-weight: lighter;
+    background-color: #da2929;
+    color: #ffffff;
 }
 
 .header .btn-cta:hover {
-    background-color: rgb(214, 139, 0);
+    background-color: rgb(143, 18, 18);
+    color: white;
+}
+.icon:hover {
+    color: #da2929;
 }
 
 .section2 {
-    background: url('../media/bg-imagen4.jpeg');
-    background-position: center;
+    /* background: #da304b; */
+    background: url('../media/photos/IMG_18932.jpg');
+    background-position: center left;
     background-size: cover;
+}
+.section span {
+    font-weight: bolder;
+}
+.section .info {
+    background-color: #da2929;
+    height: 100vh;
+}
+.section .infocamp {
+    display: grid;
+    align-items: center;
+    height: 100%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.section2 h2 {
+    font-weight: bold;
+
+    font-size: 100px;
+}
+
+.section2 .par-1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.section2 .par-2 {
+    font-weight: lighter;
+    font-size: 22px;
+}
+.section2 .par-3 {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.section2 .par-4 {
+    font-weight: bolder;
+    font-size: 24px;
+    color: #882323;
+}
+.section2 .veintidos {
+    color: #802020;
+}
+
+.section2 h2 .dunamis {
+    font-size: 36px;
+    color: #9c2c2c;
 }
 
 .section3 {
