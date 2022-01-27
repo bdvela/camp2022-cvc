@@ -54,6 +54,11 @@ body {
 #fp-nav ul li .fp-tooltip {
     color: #da2929;
 }
+
+.fp-slidesNav ul {
+    padding-left: 40px;
+}
+
 .fp-slidesNav ul li a span {
     background: #ffffff;
 }
@@ -97,11 +102,13 @@ body {
     font-size: 20px;
     color: #ffffff;
     transition: 0.5s ease;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 .nav li.active a {
     color: #da2929;
     font-weight: bolder;
     font-size: 21px;
+    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.932);
 }
 
 .nav li:hover a {
@@ -137,6 +144,10 @@ body {
 .header .subtitle {
     font-size: 24px;
     font-weight: normal;
+}
+.header .subtitle-fecha {
+    font-size: 24px;
+    font-weight: bold;
 }
 .header .contenedor-icono {
     position: absolute;
@@ -178,18 +189,21 @@ body {
 }
 
 .section2 article {
-    background-position: center left;
     background-size: cover;
 }
 .section2 article:nth-child(1) {
     background-image: url('../media/photos/IMG_18932.jpg');
 }
 .section2 article:nth-child(2) {
-    background-image: url('../media/photos/IMG_1415.JPG');
+    background-image: url('../media/photos/slide2-1.jpg');
 }
 .section2 article:nth-child(3) {
-    background-image: url('../media/photos/IMG_18932.jpg');
+    background-image: url('../media/photos/slide2-2.jpg');
 }
+.section2 article:nth-child(4) {
+    background-image: url('../media/pampas.jpg');
+}
+
 .section span {
     font-weight: bolder;
 }
@@ -201,8 +215,8 @@ body {
     height: 100%;
     padding-top: 15%;
     padding-bottom: 15%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .section2 h2 {
     font-weight: bold;
@@ -234,6 +248,22 @@ body {
 .section2 h2 .dunamis {
     font-size: 36px;
     color: #9c2c2c;
+}
+.section2 .par-11 {
+    font-size: 32px;
+}
+.section2 .par-22 {
+    text-align: end;
+    font-size: 32px;
+
+    color: #882323;
+}
+.section2 .infocampx h2 {
+    font-weight: bold;
+
+    font-size: 100px;
+}
+.section2 .imagemap {
 }
 
 .section3 {
@@ -273,5 +303,17 @@ body {
     }
     h5 {
         font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    h2 {
+        font-size: 60px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    h5 {
+        font-size: 18px !important;
     }
 }

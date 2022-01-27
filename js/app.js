@@ -11,9 +11,11 @@ const sectionsPerPage = new fullpage('#fullpage', {
     navigation: true,
     menu: '#menu',
     anchors: ['inicio', 'info', 'precios', 'contacto'],
+    parallax: true,
+
     navigationTooltips: ['Inicio', 'Info', 'Precios', 'Contacto'],
     showActiveTooltip: false,
-    sectionsColor: ['#000', '#c2c2c2', '#000'],
+    sectionsColor: ['#000', '#000', '#000'],
     verticalCentered: true,
     controlArrows: true,
     slidesNavigation: true,
