@@ -13,4 +13,13 @@ const sectionsPerPage = new fullpage('#fullpage', {
     anchors: ['inicio', 'info', 'precios', 'contacto'],
     navigationTooltips: ['Inicio', 'Info', 'Precios', 'Contacto'],
     showActiveTooltip: false,
+    sectionsColor: ['#000', '#c2c2c2', '#000'],
+    verticalCentered: true,
+    controlArrows: true,
+    slidesNavigation: true,
+    // afterLoad: function (origin, destination) {
+    //     if (destination.anchor == 'contacto') {
+    //         document.querySelector('.footer').querySelector('h2').style.opacity = 1;
+    //     }
+    // },
 });
