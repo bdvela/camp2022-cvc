@@ -1,7 +1,14 @@
 /* ------------------------- */
 /* Estilos Generales */
 /* ------------------------- */
-
+@font-face {
+    font-family: CutTheCrap;
+    src: url('../fonts/CutTheCrap.ttf');
+}
+@font-face {
+    font-family: Autography;
+    src: url('../fonts/Autography.otf');
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +20,12 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+header h1 {
+    font-family: 'CutTheCrap', sans-serif;
+}
+header span {
+    font-family: 'Autography', sans-serif;
+}
 body {
     font-family: 'Lato', sans-serif;
     font-size: 24px;
@@ -37,11 +50,21 @@ body {
     margin-top: 5px;
     margin-bottom: 0;
     font-weight: bold;
-    color: #fff;
+    color: #fcfff6;
 }
 
 .texto-negro {
     color: #000;
+}
+.texto-celeste {
+    color: #02fffd;
+    margin-top: 20px;
+    font-size: 50px !important;
+    font-family: 'Autography', sans-serif;
+}
+.texto-amarillo {
+    font-weight: lighter;
+    color: #d1bd0c;
 }
 
 /* ------------------------- */
@@ -132,7 +155,7 @@ body {
 /* ------------------------- */
 
 .header {
-    background: url('../media/dx3.jpg');
+    background: url('../media/fondonegro.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -183,12 +206,12 @@ body {
     border-radius: 8px;
     font-size: 20px;
     font-weight: lighter;
-    background-color: #e7252f;
+    background-color: #d1bd0c;
     color: #ffffff;
 }
 
 .header .btn-cta:hover {
-    background-color: rgb(143, 18, 18);
+    background-color: #a39409;
     color: white;
 }
 .icon:hover {
