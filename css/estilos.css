@@ -338,20 +338,163 @@ body {
 /* SECTION 3 */
 /* ------------------------- */
 
-.section3 {
-    background: url('../media/bg-imagen3.jpg');
-    background-position: center;
+.precios {
+    background: url('../media/photos/precios.jpg');
+    background-position: top;
     background-size: cover;
 }
+.precios .card {
+    color: #ffff;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-size: 24px;
+    border-width: 4px;
+    height: 100%;
+}
 
+.precios .card h2 {
+    font-size: 72px;
+
+    font-weight: bold;
+}
+.precios .card h2::before {
+    content: 'S/.';
+    color: #ffff;
+    font-size: 40px;
+}
+
+.precios .card h2::after {
+    content: '.00';
+    color: #ffff;
+    font-size: 40px;
+}
+.precios .card-blue .card {
+    border-color: #02fffd;
+}
+.precios .card-blue .card span {
+    color: #02fffd;
+}
+
+.precios .card-red .card span {
+    color: #e7252f;
+}
+.precios .card-red .card {
+    border-color: #e7252f;
+}
+
+.precios .card-yellow .card span {
+    color: #d1bd0c;
+}
+.precios .card-yellow .card {
+    border-color: #d1bd0c;
+}
+
+.precios .incluye {
+    position: absolute;
+    margin-top: 100px;
+    font-size: 24px;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: normal;
+}
 /* ------------------------- */
 /* SECTION 4 */
 /* ------------------------- */
-.section4 {
-    background: url('../media/photos/IMG_1925.JPG');
+.contacto {
+    background: url('../media/photos/IMG_2341.JPG');
     background-position: center;
     background-size: cover;
 }
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+.contacto .texto-naranja {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.contacto h2 {
+    text-align: center;
+    opacity: 0;
+    color: #d1bd0c;
+    text-transform: uppercase;
+    font-size: 64px;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    transition: 1s ease all;
+}
+.contacto h3 {
+    margin-top: 50px;
+    color: #e5e5e5;
+    text-align: center;
+}
+.contacto h4 {
+    margin-top: 20px;
+    text-align: center;
+    color: #02fffd;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.contacto .redes-sociales {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.contacto .redes-sociales a {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    color: #30313a;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20px;
+}
+
+.contacto .facebook i {
+    color: #3b5998;
+}
+.contacto .twitter i {
+    color: #1da1f2;
+}
+.contacto .instagram i {
+    color: #c13584;
+}
+
+.contacto .facebook:hover {
+    background: #3b5998;
+}
+.contacto .twitter:hover {
+    background: #1da1f2;
+}
+.contacto .instagram:hover {
+    background: #c13584;
+}
+
+.contacto .facebook:hover i {
+    color: #fff;
+}
+.contacto .twitter:hover i {
+    color: #fff;
+}
+.contacto .instagram:hover i {
+    color: #fff;
+}
+
 /* media querys*/
 
 @media screen and (max-width: 1660px) {
@@ -387,19 +530,191 @@ body {
     .info .slide4 .infocamp p {
         font-size: 24px;
     }
+    /* PRECIOS */
+    .precios .card {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-size: 24px;
+    }
+    .precios .card h2 {
+        font-size: 60px;
+    }
+
+    .precios .card h2::before {
+        content: 'S/.';
+        color: #ffff;
+        font-size: 30px;
+    }
+
+    .precios .card h2::after {
+        content: '.00';
+        color: #ffff;
+        font-size: 30px;
+    }
+    .precios .incluye {
+        position: absolute;
+        margin-top: 40px;
+        font-size: 22px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info article {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .info article:nth-child(2) {
+        background-position: right;
+    }
+    .info article:nth-child(3) {
+        background-position: left;
+    }
+    .info article:nth-child(4) {
+        background-image: url('../media/photos/IMG_1440.JPG');
+    }
+    /* SLIDE 1 */
+    .info .slide1 .infocamp h2 {
+        font-size: 60px;
+    }
+    .info .slide1 .infocamp .dunamis {
+        font-size: 30px;
+    }
+
+    .info .slide1 .infocamp p {
+        font-size: 16px;
+    }
+    /* SLIDE 2 */
+    .info .slide2 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide2 .infocamp p {
+        font-size: 24px;
+    }
+    /* SLIDE 3 */
+    .info .slide3 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide3 .infocamp .actividades p {
+        font-size: 24px;
+    }
+    /* SLIDE 4 */
+    .info .slide4 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide4 .infocamp p {
+        font-size: 24px;
+    }
+    /* PRECIOS */
+    .precios .card {
+        padding-left: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+    .precios .card h2 {
+        font-size: 50px;
+    }
+
+    .precios .card h2::before {
+        content: 'S/.';
+        color: #ffff;
+        font-size: 20px;
+    }
+
+    .precios .card h2::after {
+        content: '.00';
+        color: #ffff;
+        font-size: 20px;
+    }
+    .precios .incluye {
+        position: absolute;
+        margin-top: 40px;
+        font-size: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .menu .logo,
-    .menu li a,
-    .menu li.active a {
-        opacity: 0;
-    }
     .titulo {
         font-size: 75px !important;
     }
     .subtitle {
         font-size: 20px !important;
+    }
+    /* SLIDE 1 */
+    .info .slide1 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide1 .infocamp .dunamis {
+        font-size: 36px;
+    }
+
+    .info .slide1 .infocamp p {
+        font-size: 18px;
+    }
+    /* SLIDE 2 */
+    .info .slide2 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide2 .infocamp p {
+        font-size: 24px;
+    }
+    /* SLIDE 3 */
+    .info .slide3 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide3 .infocamp .actividades p {
+        font-size: 24px;
+    }
+    /* SLIDE 4 */
+    .info .slide4 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide4 .infocamp p {
+        font-size: 24px;
+    }
+    /* PRECIOS */
+    .precios .card {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .precios .card h2 {
+        font-size: 50px;
+    }
+    .precios .card p {
+        margin-top: 3px !important;
+    }
+
+    .precios .card h2::before {
+        content: 'S/.';
+        color: #ffff;
+        font-size: 20px;
+    }
+
+    .precios .card h2::after {
+        content: '.00';
+        color: #ffff;
+        font-size: 20px;
+    }
+    .precios .incluye {
+        position: absolute;
+        margin-top: 5px;
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
 
@@ -413,9 +728,55 @@ body {
     h5 {
         font-size: 20px !important;
     }
+    /* PRECIOS */
+    .precios .card {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        font-size: 10px;
+        margin-bottom: 10px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .precios .card h2 {
+        font-size: 50px;
+    }
+    .precios .card p {
+        margin-top: 3px !important;
+    }
+
+    .precios .card h2::before {
+        content: 'S/.';
+        color: #ffff;
+        font-size: 20px;
+    }
+
+    .precios .card h2::after {
+        content: '.00';
+        color: #ffff;
+        font-size: 20px;
+    }
+    .precios .incluye {
+        position: absolute;
+        margin-top: 10px;
+        font-size: 15px !important;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
 }
 
 @media screen and (max-width: 425px) {
+    .menu .logo,
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+    }
+    .nav li,
+    a {
+        margin-right: 3px !important;
+        margin-left: 3px !important;
+    }
     h2 {
         font-size: 50px !important;
     }
@@ -427,6 +788,16 @@ body {
     }
 }
 @media screen and (max-width: 375px) {
+    .menu .logo,
+    .menu li a,
+    .menu li.active a {
+        font-size: 12px;
+    }
+    .nav li,
+    a {
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+    }
     h2 {
         font-size: 50px !important;
     }
@@ -439,6 +810,16 @@ body {
 }
 
 @media screen and (max-width: 320px) {
+    .menu .logo,
+    .menu li a,
+    .menu li.active a {
+        font-size: 10px;
+    }
+    .nav li,
+    a {
+        margin-right: 1px !important;
+        margin-left: 1px !important;
+    }
     h2 {
         font-size: 40px !important;
     }

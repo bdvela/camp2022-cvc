@@ -19,9 +19,9 @@ const sectionsPerPage = new fullpage('#fullpage', {
     verticalCentered: true,
     controlArrows: true,
     slidesNavigation: true,
-    // afterLoad: function (origin, destination) {
-    //     if (destination.anchor == 'contacto') {
-    //         document.querySelector('.footer').querySelector('h2').style.opacity = 1;
-    //     }
-    // },
+    afterLoad: function (origin, destination) {
+        if (destination.anchor == 'contacto') {
+            document.querySelector('.contacto').querySelector('h2').style.opacity = 1;
+        }
+    },
 });
