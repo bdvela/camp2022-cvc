@@ -30,7 +30,7 @@ body {
 
 .texto-naranja {
     font-weight: 300;
-    color: #da2929;
+    color: #e7252f;
 }
 
 .texto-blanco {
@@ -48,11 +48,11 @@ body {
 /* Clases de Fullpage.js */
 /* ------------------------- */
 #fp-nav ul li a span {
-    background: #da2929;
+    background: #ffffff;
 }
 
 #fp-nav ul li .fp-tooltip {
-    color: #da2929;
+    color: #ffffff;
 }
 
 .fp-slidesNav ul {
@@ -63,18 +63,25 @@ body {
     background: #ffffff;
 }
 
+.fp-slidesNav ul::after {
+    content: 'Desliza →';
+    display: block;
+    font-size: 20px;
+    color: white;
+}
+
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
-    top: 95%;
+    left: 0%;
 
+    top: 90%;
     border-width: 30px 0 30px 30px;
-    border-color: transparent transparent transparent #da2929;
 }
 
 .fp-controlArrow.fp-prev {
     left: -1000px;
     border-width: 30px 30px 30px 0;
-    border-color: transparent da2929 transparent transparent;
+    border-color: transparent #e7252f transparent transparent;
 }
 
 /* ------------------------- */
@@ -105,14 +112,14 @@ body {
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 .nav li.active a {
-    color: #da2929;
+    color: #e7252f;
     font-weight: bolder;
     font-size: 21px;
-    text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.932);
+    text-shadow: none;
 }
 
 .nav li:hover a {
-    color: #da2929;
+    color: #e7252f;
 }
 .menu li a {
     transition: 0.5s ease;
@@ -176,7 +183,7 @@ body {
     border-radius: 8px;
     font-size: 20px;
     font-weight: lighter;
-    background-color: #da2929;
+    background-color: #e7252f;
     color: #ffffff;
 }
 
@@ -185,86 +192,151 @@ body {
     color: white;
 }
 .icon:hover {
-    color: #da2929;
-}
-
-.section2 article {
-    background-size: cover;
-}
-.section2 article:nth-child(1) {
-    background-image: url('../media/photos/IMG_18932.jpg');
-}
-.section2 article:nth-child(2) {
-    background-image: url('../media/photos/slide2-1.jpg');
-}
-.section2 article:nth-child(3) {
-    background-image: url('../media/photos/slide2-2.jpg');
-}
-.section2 article:nth-child(4) {
-    background-image: url('../media/pampas.jpg');
+    color: #e7252f;
 }
 
 .section span {
     font-weight: bolder;
 }
-.section .info {
-    background-color: #da2929;
-    height: 100vh;
+
+/* ------------------------- */
+/* SECTION 2 */
+/* ------------------------- */
+.info article {
+    background-size: cover;
 }
+.info article:nth-child(1) {
+    background-image: url('../media/photos/IMG_18932.jpg');
+}
+.info article:nth-child(2) {
+    background-image: url('../media/photos/slide2-1.jpg');
+}
+.info article:nth-child(3) {
+    background-image: url('../media/photos/slide2-2.jpg');
+}
+.info article:nth-child(4) {
+    background-image: url('../media/photos/map.jpg');
+    background-size: contain;
+}
+
 .section .infocamp {
     height: 100%;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.section2 h2 {
+
+/* SLIDE 1 */
+.section .slide1 .infocamp {
+    background-color: #e7252f;
+    height: 100vh;
+}
+
+.section .slide2 .infocamp {
+    background-color: #02fffd;
+    height: 100vh;
+}
+
+.section .slide3 .infocamp {
+    background-color: #d1bd0c;
+    height: 100vh;
+}
+
+.section .slide4 .infocamp {
+    background-color: #292929;
+    height: 100vh;
+}
+
+.info .slide1 .infocamp h2 {
+    font-size: 120px;
+    color: #fcfff6;
     font-weight: bold;
-
-    font-size: 100px;
 }
-
-.section2 .par-1 {
-    font-weight: bold;
-    font-size: 22px;
+.info .slide1 .infocamp .veintidos {
+    color: #292929;
 }
-.section2 .par-2 {
-    font-weight: lighter;
-    font-size: 22px;
-}
-.section2 .par-3 {
-    font-weight: bolder;
-    font-size: 24px;
-}
-.section2 .par-4 {
-    font-weight: bolder;
-    font-size: 24px;
-    color: #882323;
-}
-.section2 .veintidos {
-    color: #802020;
-}
-
-.section2 h2 .dunamis {
+.info .slide1 .infocamp .dunamis {
     font-size: 36px;
-    color: #9c2c2c;
+    color: #af131b;
 }
-.section2 .par-11 {
-    font-size: 32px;
-}
-.section2 .par-22 {
-    text-align: end;
-    font-size: 32px;
 
-    color: #882323;
-}
-.section2 .infocampx h2 {
+.info .slide1 .infocamp p {
+    font-size: 22px;
+    color: #fcfff6;
     font-weight: bold;
+}
 
-    font-size: 100px;
+.info .slide1 .infocamp .regresan p {
+    font-weight: lighter;
 }
-.section2 .imagemap {
+
+.info .slide1 .infocamp .fecha-ready {
+    font-weight: bold;
 }
+.info .slide1 .infocamp .ready {
+    color: #af131b;
+}
+
+/* SLIDE 2 */
+
+.info .slide2 .infocamp h2 {
+    font-size: 120px;
+    color: #030303;
+    font-weight: bold;
+}
+
+.info .slide2 .infocamp .amistades {
+    color: #00b2b1;
+}
+
+.info .slide2 .infocamp p {
+    font-size: 32px;
+    color: #ffff;
+}
+
+.info .slide2 .infocamp h3 {
+    text-align: end;
+    font-weight: bold;
+    color: #009998;
+}
+
+/* SLIDE 3 */
+
+.info .slide3 .infocamp h2 {
+    font-size: 120px;
+    color: #292929;
+    font-weight: bold;
+}
+
+.info .slide3 .infocamp .diversion {
+    color: #877a08;
+}
+
+.info .slide3 .infocamp .actividades p {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+
+/* SLIDE 4 */
+.info .slide4 .infocamp h2 {
+    font-size: 120px;
+    font-weight: bold;
+    color: #ffff;
+}
+.info .slide4 .infocamp h2 .listos {
+    color: #4f4f4f;
+}
+.info .slide4 .infocamp p {
+    font-size: 36px;
+    color: #fcfff6;
+    font-weight: lighter;
+}
+
+/* ------------------------- */
+/* SECTION 3 */
+/* ------------------------- */
 
 .section3 {
     background: url('../media/bg-imagen3.jpg');
@@ -272,13 +344,50 @@ body {
     background-size: cover;
 }
 
+/* ------------------------- */
+/* SECTION 4 */
+/* ------------------------- */
 .section4 {
     background: url('../media/photos/IMG_1925.JPG');
     background-position: center;
     background-size: cover;
 }
-
 /* media querys*/
+
+@media screen and (max-width: 1660px) {
+    /* SLIDE 1 */
+    .info .slide1 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide1 .infocamp .dunamis {
+        font-size: 36px;
+    }
+
+    .info .slide1 .infocamp p {
+        font-size: 18px;
+    }
+    /* SLIDE 2 */
+    .info .slide2 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide2 .infocamp p {
+        font-size: 24px;
+    }
+    /* SLIDE 3 */
+    .info .slide3 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide3 .infocamp .actividades p {
+        font-size: 24px;
+    }
+    /* SLIDE 4 */
+    .info .slide4 .infocamp h2 {
+        font-size: 80px;
+    }
+    .info .slide4 .infocamp p {
+        font-size: 24px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .menu .logo,
@@ -296,7 +405,7 @@ body {
 
 @media screen and (max-width: 510px) {
     h2 {
-        font-size: 75px !important;
+        font-size: 70px !important;
     }
     p {
         font-size: 18px !important;
@@ -306,9 +415,32 @@ body {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 425px) {
     h2 {
-        font-size: 60px !important;
+        font-size: 50px !important;
+    }
+    p {
+        font-size: 18px !important;
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+}
+@media screen and (max-width: 375px) {
+    h2 {
+        font-size: 50px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    h5 {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h2 {
+        font-size: 40px !important;
     }
     p {
         font-size: 14px !important;
