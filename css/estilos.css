@@ -110,6 +110,15 @@ body {
 /* ------------------------- */
 /* Menu de Navegación */
 /* ------------------------- */
+
+/* NAVBAR SECTION */
+.navbar .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
 .nav {
     position: fixed;
     display: flex;
@@ -117,8 +126,8 @@ body {
     justify-content: space-between;
     z-index: 70;
     width: 100%;
-    margin-left: 10px;
-    padding: 10px 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .nav li,
@@ -158,6 +167,7 @@ body {
     background: url('../media/fondonegro.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .header .contenedor-titulo {
@@ -175,6 +185,7 @@ body {
     font-size: 24px;
     font-weight: normal;
 }
+
 .header .subtitle-fecha {
     font-size: 24px;
     font-weight: bold;
@@ -183,7 +194,7 @@ body {
     position: absolute;
     z-index: 99;
     bottom: 3%;
-    left: 50%;
+    right: 50%;
     font-size: 40px;
     animation: bajar-subir 1.2s ease infinite;
 }
@@ -491,30 +502,30 @@ body {
 .contacto .facebook i {
     color: #3b5998;
 }
-.contacto .twitter i {
-    color: #1da1f2;
-}
 .contacto .instagram i {
     color: #c13584;
+}
+.contacto .whatsApp i {
+    color: #25d366;
 }
 
 .contacto .facebook:hover {
     background: #3b5998;
 }
-.contacto .twitter:hover {
-    background: #1da1f2;
-}
 .contacto .instagram:hover {
     background: #c13584;
+}
+.contacto .whatsApp:hover {
+    background: #25d366;
 }
 
 .contacto .facebook:hover i {
     color: #fff;
 }
-.contacto .twitter:hover i {
+.contacto .instagram:hover i {
     color: #fff;
 }
-.contacto .instagram:hover i {
+.contacto .whatsApp:hover i {
     color: #fff;
 }
 
