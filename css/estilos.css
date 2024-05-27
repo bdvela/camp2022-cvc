@@ -610,6 +610,9 @@ body {
         background-position: center;
     }
 
+    .titulo-logo {
+        width: 90%;
+    }
     .info article:nth-child(2) {
         background-position: right;
     }
@@ -688,6 +691,9 @@ body {
 @media screen and (max-width: 768px) {
     .titulo {
         font-size: 75px !important;
+    }
+    .titulo-logo {
+        width: 90%;
     }
     .texto-blanco-22 {
         font-size: 70px;
